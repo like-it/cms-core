@@ -9,13 +9,7 @@
 		"ext-mbstring": "*",
 		"ext-json": "*",
 		"ext-posix": "*",
-		"r3m/framework" : "*",
-		"lcobucci/jwt": "^4.1",
-		"doctrine/orm": "^2.8",
-		"doctrine/doctrine-bundle": "^2.4",
-		"doctrine/annotations": "^1.13",
-		"doctrine/persistence": "^2.2",
-		"defuse/php-encryption": "^2.3"
+		"r3m/framework" : "*"
 	},
 	"license" : "proprietary",
 	"authors" : [{
