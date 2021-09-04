@@ -1,0 +1,10 @@
+{
+    "cms-core-index": {
+        "path": "\/",
+        "controller": "LikeIt.Cms.Core.Index.Controller.Index.overview",
+        "method": [
+            "GET",
+            "POST"
+        ]
+    }
+}
