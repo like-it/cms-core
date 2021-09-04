@@ -1,10 +1,5 @@
 {
-    "cms-core-index": {
-        "path": "\/",
-        "controller": "LikeIt.Cms.Core.Index.Controller.Index.overview",
-        "method": [
-            "GET",
-            "POST"
-        ]
+    "ce3934d9-c84d-4699-8f0e-ce8a73ab9dd7": {
+        "resource": "{$project.dir.source}Index/Data/Route.json"
     }
 }

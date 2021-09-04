@@ -12,7 +12,7 @@ use R3m\Io\Exception\UrlNotExistException;
 class Index extends View {
     const DIR = __DIR__ . DIRECTORY_SEPARATOR;    
 
-    public static function overview(App $object){
+    public static function main(App $object){
         $name = Index::name(__FUNCTION__, __CLASS__, '/');
         try {
             $url = Index::locate($object, $name);
