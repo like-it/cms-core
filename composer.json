@@ -1,0 +1,31 @@
+{
+	"name" : "like-it/cms-core",
+	"description" : "Cms core",
+	"type" : "library",
+	"keywords" : ["cms", "funda", "r3m", "like-it", "universe orange"],
+	"homepage": "https://funda.world",
+	"require" : {
+		"php": ">=7.1",
+		"ext-mbstring": "*",
+		"ext-json": "*",
+		"ext-posix": "*",
+		"r3m/framework" : "*",
+		"lcobucci/jwt": "^4.1",
+		"doctrine/orm": "^2.8",
+		"doctrine/doctrine-bundle": "^2.4",
+		"doctrine/annotations": "^1.13",
+		"doctrine/persistence": "^2.2",
+		"defuse/php-encryption": "^2.3"
+	},
+	"license" : "proprietary",
+	"authors" : [{
+			"name" : "Remco van der Velde",
+			"email" : "remco@universeorange.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Like-it\\Cms\\Core" : "src/"
+		}
+	}
+}
