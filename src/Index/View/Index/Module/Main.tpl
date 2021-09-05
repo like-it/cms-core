@@ -3,11 +3,11 @@
     import {$ldelim} search {$rdelim} from "/Module/Search/Js/Search.js";
     import {$ldelim} version {$rdelim} from "/Module/Priya/Js/Priya.js";
 
-    ready(({
-        root: root,
-        search: search,
-        version: version
-    }) => {$ldelim}
+    ready((
+        root,
+        search,
+        version
+    ) => {$ldelim}
 
         require(
         [
