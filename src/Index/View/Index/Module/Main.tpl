@@ -1,5 +1,5 @@
 {script('module')}
-import {$ldelim} search {$rdelim} from "/Search/Js/Search.js";
+import {$ldelim} search {$rdelim} from "/Search/Js/Module/Search.js";
 require(
 [
 root() + 'Search/Css/Result.css?' + version(),
