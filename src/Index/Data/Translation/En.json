@@ -6,6 +6,9 @@
     "navbar.brand" : "Funda CMS",
     "navbar.home" : "Home",
     "navbar.search" : "Search",
+    "navbar.search.type" : "search",
+    "navbar.search.label" : "Search",
+    "navbar.search.placeholder" : "Search...",
     "navbar.settings" : "Settings",
     "navbar.translations" : "Translations"
 }
