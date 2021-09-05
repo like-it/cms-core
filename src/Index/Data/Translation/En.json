@@ -5,6 +5,7 @@
     "meta.title" : "CMS | Funda.world",
     "navbar.brand" : "Funda CMS",
     "navbar.home" : "Home",
+    "navbar.search" : "Search",
     "navbar.settings" : "Settings",
-    "navbar.search" : "Search"
+    "navbar.translations" : "Translations"
 }
