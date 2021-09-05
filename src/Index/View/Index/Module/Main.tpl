@@ -8,7 +8,7 @@
     [
     root() + 'Module/Search/Css/Result.css?' + version(),
     ],
-    (){$ldelim}
+    () => {$ldelim}
     search.init();
     {$rdelim});
 {/script}
