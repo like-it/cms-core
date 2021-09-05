@@ -1,4 +1,10 @@
-{script('module-ready')}
+{script('ready')}
+    request('/Module');
+
+
+
+
+/*
     import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
     import {$ldelim} search {$rdelim} from "/Module/Search/Js/Search.js";
     import {$ldelim} version {$rdelim} from "/Module/Priya/Js/Priya.js";
@@ -10,4 +16,5 @@
         search.init();
         {$rdelim}
     );
+*/
 {/script}
