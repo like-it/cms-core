@@ -1,5 +1,4 @@
 {script('module')}
-ready(() => {$ldelim}
     import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
     import {$ldelim} search {$rdelim} from "/Module/Search/Js/Search.js";
     import {$ldelim} version {$rdelim} from "/Module/Priya/Js/Priya.js";
@@ -12,5 +11,4 @@ ready(() => {$ldelim}
     search.init();
     {$rdelim});
     */
-{$rdelim});
 {/script}
