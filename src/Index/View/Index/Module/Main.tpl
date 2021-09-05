@@ -1,5 +1,5 @@
 {script('module')}
-ready(() => {
+ready(() => {$ldelim}
     import {$ldelim} search {$rdelim} from "/Search/Js/Module/Search.js";
     require(
     [
@@ -10,5 +10,5 @@ ready(() => {
     translation.import({export.translation('json-line')});
     search.init();
     {$rdelim});
-});
+{$rdelim});
 {/script}
