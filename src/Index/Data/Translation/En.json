@@ -3,5 +3,8 @@
     "meta.description" : "CMS panel",
     "meta.keywords" : "",
     "meta.title" : "CMS | Funda.world",
-    "navbar.brand" : "Funda CMS"
+    "navbar.brand" : "Funda CMS",
+    "navbar.home" : "Home",
+    "navbar.settings" : "Settings",
+    "navbar.search" : "Search"
 }
