@@ -12,14 +12,21 @@ use R3m\Io\Exception\UrlNotExistException;
 class Index extends View {
     const DIR = __DIR__ . DIRECTORY_SEPARATOR;    
 
-    public static function main(App $object){
+    public static function start(App $object){
         $name = Index::name(__FUNCTION__, __CLASS__, '/');
         try {
-            $url = Index::locate($object, $name);
-            $view = Index::response($object, $url);
+            if(App::contentType($object) == App::CONTENT_TYPE_HTML){
+                $url = Index::locate($object, 'Main');
+                $object->data('template.name', $name);
+                $object->data('template.dir', Index::DIR);
+                $view = Index::response($object, $url);
+            } else {
+                $url = Index::locate($object, $name);
+                $view = Index::response($object, $url);
+            }
             return $view;
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
-            return $exception->getMessage() . "\n";
+            return $exception;
         }
     }
 }
