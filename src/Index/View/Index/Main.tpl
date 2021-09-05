@@ -14,8 +14,6 @@
 
     <link rel="shortcut icon" href="{$html.head.icon|default:''}">
     <link rel="alternate" hreflang="x-default" href="{$host.url}">
-    <link rel="alternate" hreflang="nl" href="{$host.url}nl/">
-    <link rel="alternate" hreflang="en" href="{$host.url}en/">
     <link rel="canonical" href="{$url}">
     {if (!is.empty($script))}
         {implode("\n\t\t\t", $script)}
@@ -27,6 +25,6 @@
 
 </head>
 <body>
-{$html.content.body|default:""}
+{$html.content.body|default:"[test]"|json.encode}
 </body>
 </html>
