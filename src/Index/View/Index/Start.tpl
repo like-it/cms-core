@@ -1,4 +1,5 @@
 {require($controller.dir.view + $controller.title + '/Init.tpl')}
+{require($controller.dir.view + $controller.title + '/Module/Main.tpl')}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">{__('navbar.brand')}</a>
