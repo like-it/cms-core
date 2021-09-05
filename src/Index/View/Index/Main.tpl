@@ -15,12 +15,10 @@
     <link rel="shortcut icon" href="{$html.head.icon|default:''}">
     <link rel="alternate" hreflang="x-default" href="{$host.url}">
     <link rel="canonical" href="{$url}">
-    {if (!is.empty($script))}
-    {implode("\n\t\t", $script)}
+    {if (!is.empty($script))}{implode("\n\t", $script)}
     {/if}
 
-    {if (!is.empty($link))}
-    {implode("\n\t\t", $link)}
+    {if (!is.empty($link))}{implode("\n\t", $link)}
     {/if}
 
 </head>
