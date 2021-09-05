@@ -25,6 +25,6 @@
 
 </head>
 <body>
-{$html.content.body|default:'[test]'|json.encode}
+{$html.content.body|default:''}
 </body>
 </html>
