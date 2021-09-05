@@ -6,8 +6,8 @@ ready(() => {$ldelim}
     root() + 'Search/Css/Result.css?' + version(),
     ],
     function(){$ldelim}
-    language("{language()}");
-    translation.import({export.translation('json-line')});
+    //language("{language()}");
+    //translation.import({export.translation('json-line')});
     search.init();
     {$rdelim});
 {$rdelim});
