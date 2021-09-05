@@ -1,21 +1,13 @@
-{script('module')}
+{script('module-ready')}
     import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
     import {$ldelim} search {$rdelim} from "/Module/Search/Js/Search.js";
     import {$ldelim} version {$rdelim} from "/Module/Priya/Js/Priya.js";
-
-    ready((
-        root,
-        search,
-        version
-    ) => {$ldelim}
-
-        require(
+    require(
         [
         root() + 'Module/Search/Css/Result.css?' + version(),
         ],
         () => {$ldelim}
-
         search.init();
-        {$rdelim});
-    {$rdelim});
+        {$rdelim}
+    );
 {/script}
