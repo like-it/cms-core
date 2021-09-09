@@ -1,4 +1,28 @@
 {require($controller.dir.view + $controller.title + '/Init.tpl')}
+{if(cookie('user.token'))}
+    {require( $controller.dir.view + 'User/Token/Import.Cookie.tpl')}
+    {import('Start.css')}
+    {import('Debug.css', 'Debug')}
+{elseif(cookie('user.refresh.token'))}
+    /*
+    {script('ready')}
+    _('user').collection('route.backend.url', null);
+    _('user').collection('route.frontend.url', "{route.get(route.prefix() + '-start')}");
+    {/script}
+    {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
+    {import('Start.css')}
+    {import('Debug.css', 'Debug')}
+    */
+{else}
+    {dd(route.prefix())}
+    {redirect(route.get(route.prefix() + '-user-login'))}
+{/if}
+
+
+
+
+
+/*
 {require($controller.dir.view + $controller.title + '/Module/Main.tpl')}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
@@ -41,3 +65,4 @@
         </div>
     </div>
 </nav>
+*/

@@ -1,9 +1,5 @@
 {script('ready')}
     request('/Module');
-
-
-
-
 /*
     import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
     import {$ldelim} search {$rdelim} from "/Module/Search/Js/Search.js";
