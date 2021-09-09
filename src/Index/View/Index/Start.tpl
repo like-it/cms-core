@@ -28,6 +28,8 @@
         {$rdelim};
         header("Authorization", 'Bearer ' + token);
         request("{server.url('core')}Navigation/Get/", data);
+        header("Authorization", 'Bearer ' + token);
+        request("{server.url('core')}Navigation/Get/", data);
         {/script}
         /*
          // bug in parse array
