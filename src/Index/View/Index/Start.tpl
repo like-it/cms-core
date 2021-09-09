@@ -21,11 +21,12 @@
         {import('Debug.css', 'Debug')}
         /*
         load current user
+        load refresh token from cookie in js user
         */
         {dd('yes 2')}
-    {if(cookie('user.refresh.token'))}
+    {elseif(cookie('user.refresh.token'))}
         /*
-        load refresh token in js user
+        do backend usre/refrsh/token to fetch user
         */
         /*
         {script('ready')}
