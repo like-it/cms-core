@@ -45,6 +45,7 @@ ready(() => {
                     switch(code){
                     case 'user-blocked' :
                         const route_blocked = _('user').collection('route.cms.core.blocked');
+                        console.log(route_blocked);
                         if(route_blocked){
                             setTimeout(function(){
                                 request(route_blocked);

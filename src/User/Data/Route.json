@@ -6,5 +6,13 @@
             "GET",
             "POST"
         ]
+    },
+    "cms-core-user-login-blocked": {
+        "path": "\/User\/Login\/Blocked",
+        "controller": "LikeIt.Cms.Core.User.Controller.User.login_blocked",
+        "method": [
+            "GET",
+            "POST"
+        ]
     }
 }
