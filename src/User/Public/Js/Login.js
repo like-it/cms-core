@@ -12,7 +12,7 @@ ready(() => {
             forgot.request();
         });
     }
-    const email = select('input[name="node.email"]');
+    const email = select('input[name="node. email"]');
     if(email){
         email.focus();
     }
