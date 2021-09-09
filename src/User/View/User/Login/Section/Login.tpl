@@ -1,16 +1,3 @@
-/*
-{script('module')}
-import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
-import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
-//user.data('route.core.token', "{server.url('core')}User/");
-user.data('route.core.refresh.token', "{server.url('core')}User/Refresh/Token");
-user.data('route.cms.core.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
-user.data('route.cms.core.login', "{route.get(route.prefix() + '-user-login-blocked')}");
-user.data('route.cms.core.refresh.token', "{route.get(route.prefix() + '-user-login-blocked')}");
-user.data('route.cms.core.start', "{route.get(route.prefix() + '-start')}");
-console.log(user.data());
-{/script}
-*/
 {script('ready')}
 _('user').collection('route.core.refresh.token', "{server.url('core')}User/Refresh/Token/");
 _('user').collection('route.cms.core.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
