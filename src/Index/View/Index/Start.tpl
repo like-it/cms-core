@@ -29,7 +29,7 @@
         * load refresh token from cookie in js user
         */
     {elseif(cookie('user.refresh.token'))}
-        {require(dirname($controller.dir.view, 2) + 'User/View/User/Token/Import.Refresh.Cookie.tpl')}
+        {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Refresh.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         {script('ready')}
