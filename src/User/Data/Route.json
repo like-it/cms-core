@@ -14,5 +14,21 @@
             "GET",
             "POST"
         ]
+    },
+    "cms-core-user-password-forgot": {
+        "path": "\/User\/Password\/Forgot\/",
+        "controller": "LikeIt.Cms.Core.User.Controller.User.password_forgot",
+        "method": [
+            "GET",
+            "POST"
+        ]
+    },
+    "cms-core-user-password-forgot-success": {
+        "path": "\/User\/Password\/Forgot\/Success\/",
+        "controller": "LikeIt.Cms.Core.User.Controller.User.password_forgot_success",
+        "method": [
+            "GET",
+            "POST"
+        ]
     }
 }
