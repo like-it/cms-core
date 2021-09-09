@@ -27,7 +27,6 @@
         load current user
         load refresh token from cookie in js user
         */
-        {dd('yes 2')}
     {elseif(cookie('user.refresh.token'))}
         /*
         do backend usre/refrsh/token to fetch user
