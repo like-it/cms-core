@@ -6,6 +6,7 @@
         user.set({object($request.user, 'json-line')});
         {/script}
         {if(!is.empty($request.user.token))}
+            {dd(config())}
             {require($controller.dir.view + 'User/Token/Set.Cookie.tpl')}
             {require($controller.dir.view + 'User/Token/Import.Request.tpl')}
         {/if}
