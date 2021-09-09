@@ -4,7 +4,7 @@
         {script('module')}
         import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
         user.set({object($request.user, 'json-line')});
-        console.log(user.get());
+        console.log(user.token());
         {/script}
         /*
         {script('ready')}
