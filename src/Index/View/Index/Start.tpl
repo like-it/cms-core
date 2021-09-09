@@ -1,22 +1,59 @@
 {require($controller.dir.view + $controller.title + '/Init.tpl')}
-{if(cookie('user.token'))}
-    {require( $controller.dir.view + 'User/Token/Import.Cookie.tpl')}
-    {import('Start.css')}
-    {import('Debug.css', 'Debug')}
-{elseif(cookie('user.refresh.token'))}
-    /*
-    {script('ready')}
-    _('user').collection('route.backend.url', null);
-    _('user').collection('route.frontend.url', "{route.get(route.prefix() + '-start')}");
-    {/script}
-    {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
-    {import('Start.css')}
-    {import('Debug.css', 'Debug')}
-    */
+{if(content.type() == 'application/json')}
+    {if(!is.empty($request.user))}
+        {script('module')}
+        import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
+        user.set({object($request.user, 'json-line')});
+        console.log(user.data());
+        {/script}
+        /*
+        {script('ready')}
+        _('user').collection('user', {object($request.user, 'json-line')});
+        {/script}
+        {if(!is.empty($request.user.token))}
+            {require($controller.dir.view + 'User/Token/Set.Cookie.tpl')}
+            {require($controller.dir.view + 'User/Token/Import.Request.tpl')}
+        {/if}
+        {if(!is.empty($request.user.refresh.token))}
+            {require( $controller.dir.view + 'User/Token/Set.Refresh.Cookie.tpl')}
+        {/if}
+        */
+    {/if}
+    {if(cookie('user.token'))}
+        {require( $controller.dir.view + 'User/Token/Import.Cookie.tpl')}
+        {import('Start.css')}
+        {import('Debug.css', 'Debug')}
+    {elseif(cookie('user.refresh.token'))}
+        /*
+        {priya.redirect(route.get(route.prefix() + '-start'))}
+        */
+        /*
+        {script('ready')}
+        _('user').collection('route.backend.url', null);
+        _('user').collection('route.frontend.url', "{route.get(route.prefix() + '-start')}");
+        {/script}
+        {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
+        */
+    {/if}
 {else}
-    {redirect(route.get(route.prefix() + '-user-login'))}
+    {if(cookie('user.token'))}
+        {require( $controller.dir.view + 'User/Token/Import.Cookie.tpl')}
+        {import('Start.css')}
+        {import('Debug.css', 'Debug')}
+    {elseif(cookie('user.refresh.token'))}
+        /*
+        {script('ready')}
+        _('user').collection('route.backend.url', null);
+        _('user').collection('route.frontend.url', "{route.get(route.prefix() + '-start')}");
+        {/script}
+        {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
+        {import('Start.css')}
+        {import('Debug.css', 'Debug')}
+        */
+    {else}
+        {redirect(route.get(route.prefix() + '-user-login'))}
+    {/if}
 {/if}
-
 
 
 
