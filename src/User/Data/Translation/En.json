@@ -3,12 +3,15 @@
     "meta.description" : "CMS panel",
     "meta.keywords" : "",
     "meta.title" : "CMS | Funda.world",
-    "navbar.brand" : "Funda CMS",
-    "navbar.home" : "Home",
-    "navbar.search" : "Search",
-    "navbar.search.type" : "search",
-    "navbar.search.label" : "Search",
-    "navbar.search.placeholder" : "Search...",
-    "navbar.settings" : "Settings",
-    "navbar.translations" : "Translations"
+    "user.blocked" : "User is blocked for 15 minutes.<br>Please try again later...",
+    "user.e-mail" : "Email",
+    "user.login.title" : "User login",
+    "user.login" : "Login",
+    "user.password" : "Password",
+    "user.password.forgot" : "Forgot password",
+    "user.password.forgot.text" : "Please fill in your e-mail address in order to receive a recovery e-mail:",
+    "user.password.forgot.title" : "Forgot password",
+    "user.password.forgot.success" : "An e-mail with instructions is send to \"{request('email')}\"",
+    "user.version" : "Version ",
+    "user.send" : "Send"
 }
