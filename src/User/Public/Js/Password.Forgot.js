@@ -9,7 +9,7 @@ _('password.forgot').bind = () => {
             event.preventDefault();
             const data = this.data('serialize');
             this.request(data, null, (url, data) => {
-                const route_success = priya.collection('route.cms.core.password_forgot');
+                const route_success = _('user').collection('route.cms.core.password_forgot');
                 console.log(route_success);
                 if(
                   route_success &&
