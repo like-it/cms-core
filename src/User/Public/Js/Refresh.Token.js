@@ -18,6 +18,11 @@
      };
 
 
+     console.log(refresh_token);
+     console.log(title);
+     console.log(route.core);
+     console.log(route.login);
+
     //const user_request = _('user').collection('request') ? _('user').collection('request') : {};
     if(
         refresh_token &&
