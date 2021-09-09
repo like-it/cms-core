@@ -1,6 +1,7 @@
  ready(() => {
     const refresh_token = _('user').collection('user.refresh.token');
     const title = _('user').collection('start.title');
+    /*
     const route = {
         "login" : _('user').collection('route.frontend.login'),
         "start" : _('user').collection('route.frontend.start'),
@@ -9,16 +10,25 @@
         "backend.url" : _('user').collection('route.backend.url'),
         "frontend.url" : _('user').collection('route.frontend.url')
     };
-    const user_request = _('user').collection('request') ? _('user').collection('request') : {};
+     */
+
+     const route = {
+         core : _('user').collection('route.core.refresh.token'),
+         login : _('user').collection('route.cms.core.login')
+     };
+
+
+    //const user_request = _('user').collection('request') ? _('user').collection('request') : {};
     if(
         refresh_token &&
         title &&
-        route.start &&
-        route.backend &&
-        route.frontend
+        route.core &&
+        route.login
     ){
         header("Authorization", 'Bearer ' + refresh_token);
-        request(route.backend, null, (url, data) => {
+        request(route.core, null, (url, data) => {
+            console.log(data);
+            /*
             if(is.empty(data)){
                 redirect(route.login);
             }
@@ -51,6 +61,7 @@
                     }
                 });
             }
+             */
         });
     }
 });

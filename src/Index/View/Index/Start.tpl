@@ -15,7 +15,7 @@
         {priya.redirect(route.get(route.prefix() + '-index'))}
     {/if}
 {else}
-    {if(cookie('user.token'))}
+    {if(cookie('user.token2'))}
         {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.Cookie.tpl')}
         {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.User.tpl')}
         {import('Start.css')}
@@ -29,15 +29,15 @@
         * load refresh token from cookie in js user
         */
     {elseif(cookie('user.refresh.token'))}
-        /*
-        do backend usre/refrsh/token to fetch user
-        */
-        /*
-        {script('ready')}
-        _('user').collection('route.backend.url', null);
-        _('user').collection('route.frontend.url', "{route.get(route.prefix() + '-start')}");
-        {/script}
         {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
+        {import('Start.css')}
+        {import('Debug.css', 'Debug')}
+        {script('ready')}
+        console.log(_('user').collection());
+        {/script}
+        /*
+        do backend user/refresh/token to fetch user
+        */
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         */
