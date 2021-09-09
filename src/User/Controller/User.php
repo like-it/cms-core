@@ -34,6 +34,16 @@ class User extends View {
         }
     }
 
+    public static function login_blocked(App $object){
+        $name = User::name(__FUNCTION__, __CLASS__, '/');
+        try {
+            $url = User::locate($object, $name);
+            return User::response($object, $url);
+        } catch(Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
+            return $exception;
+        }
+    }
+
     /*
     public static function start(App $object){
         $name = User::name(__FUNCTION__, __CLASS__, '/');
