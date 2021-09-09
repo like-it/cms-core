@@ -14,6 +14,7 @@
     {import('Debug.css', 'Debug')}
     */
 {else}
+    {route.prefix('cms-funda-world')}
     {dd(route.prefix())}
     {redirect(route.get(route.prefix() + '-user-login'))}
 {/if}
