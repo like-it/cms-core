@@ -23,6 +23,7 @@ class User extends View {
             } else {
                 $url = User::locate($object, $name);
                 $view = User::response($object, $url);
+                dd($view);
             }
             return $view;
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
