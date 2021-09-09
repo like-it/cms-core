@@ -16,7 +16,7 @@
     {/if}
 {else}
     {if(cookie('user.token'))}
-        {require(dir.name($controller.dir.view,2) + 'User/User/Token/Import.Cookie.tpl')}
+        {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         /*
