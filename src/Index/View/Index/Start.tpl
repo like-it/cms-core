@@ -20,6 +20,8 @@
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.User.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
+        <section name=""></section>
+        <section name="home"></section>
         {script('ready')}
         const token = _('user').collection('user.token');
         const data = {$ldelim}
