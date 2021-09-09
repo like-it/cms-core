@@ -1,5 +1,6 @@
 {script('ready')}
-_('user').collection('route.cms.core.password_forgot', "{route.get(route.prefix() + '-user-password-forgot-success')}");
+//_('user').collection('route.cms.core.password_forgot', "{route.get(route.prefix() + '-user-password-forgot-success')}");
+console.log(_('user').collection());
 {/script}
 {import(
 	'Password.Forgot.js'
@@ -13,7 +14,7 @@ _('user').collection('route.cms.core.password_forgot', "{route.get(route.prefix(
 				{__('user.password.forgot.text')}
 			</p>
         	<label><i class="fas fa-user"></i></label>
-			<input type="text" name="email" value="{$request.username|default:''}" placeholder="{__('user.e-mail')}"/><br>
+			<input type="text" name="node.email" value="{$request.node.username|default:''}" placeholder="{__('user.e-mail')}"/><br>
         	<input type="submit" value="{__('user.send')}" />
         	<span class="user-password-forgot-error"></span>
     	</form>
