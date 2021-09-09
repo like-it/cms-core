@@ -7,7 +7,6 @@
     const login = _('user').collection('route.cms.core.login');
     header("Authorization", 'Bearer ' + token);
     request(url, null, (url, data) => {$ldelim}
-        data.user = null;
         if(!is.empty(data.user)){$ldelim}
           data.user.refresh = {$ldelim}{$rdelim};
           data.user.refresh.token = refresh_token;
