@@ -7,17 +7,17 @@
         {/script}
         {if(!is.empty($request.user.token))}
             {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Set.Cookie.tpl')}
-            {require(dir.name($controller.dir.view  2) + 'User/View/User/Token/Import.Request.tpl')}
+            {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Request.tpl')}
         {/if}
         /*
         {if(!is.empty($request.user.refresh.token))}
-            {require(dir.name($controller.dir.view, 3) + 'User/View/User/Token/Set.Refresh.Cookie.tpl')}
+            {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Set.Refresh.Cookie.tpl')}
         {/if}
         */
     {/if}
     /*
     {if(cookie('user.token'))}
-        {require(dir.name($controller.dir.view, 3) + 'User/View/User/Token/Import.Cookie.tpl')}
+        {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
 
