@@ -19,7 +19,7 @@ _('user').collection('start.title', "{__('start.title')}");
 		<form
 			name="user_login"
 			data-url="{server.url('backend')}User/Login/"
-			method="POST    "
+			method="POST"
 		>
 			<label><i class="fas fa-user""></i></label>
 			<input type="text" name="email" value="{$request.email|default:''}" placeholder="{__('user.e-mail')}"/><br>
