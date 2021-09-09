@@ -26,7 +26,7 @@ class User extends View {
                 $url = User::locate($object, $name);
                 $view = User::response($object, $url);
 
-                return new Response($view, Response::TYPE_JSON);
+                return new Response($view, Response::TYPE_OBJECT);
             }
 
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
