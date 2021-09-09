@@ -14,29 +14,19 @@
         {/if}
         {redirect(route.get(route.prefix() + '-index'))}
     {/if}
-    {if(cookie('user.token'))}
-        {dd('yes')}
-    {/if}
-    /*
-    {if(cookie('user.token'))}
-        {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Cookie.tpl')}
-        {import('Start.css')}
-        {import('Debug.css', 'Debug')}
-
-//        Load user current
-
-    {/if}
-    {if(cookie('user.refresh.token'))}
-
-//        Load refresh token in user
-    {/if}
-    */
 {else}
     {if(cookie('user.token'))}
-        {require(dir.name($controller.dir.view,2) + 'User/Token/Import.Cookie.tpl')}
+        {require(dir.name($controller.dir.view,2) + 'User/User/Token/Import.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
-    {elseif(cookie('user.refresh.token'))}
+        /*
+        load current user
+        */
+        {dd('yes 2')}
+    {if(cookie('user.refresh.token'))}
+        /*
+        load refresh token in js user
+        */
         /*
         {script('ready')}
         _('user').collection('route.backend.url', null);
