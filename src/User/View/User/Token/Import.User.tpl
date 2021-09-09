@@ -4,8 +4,8 @@
     const url = _('user').collection('route.core.current');
     header("Authorization", 'Bearer ' + token);
     console.log(url);
-    /*
-    request();
-    */
+    request(url, null, (url, data) => {
+        console.log(data);
+    });
 {/script}
 {import('Token.js', 'User')}
