@@ -4,8 +4,5 @@
     },
     "0f62494d-0ee6-4ca6-b227-3ad92193b6d3": {
         "resource": "{$project.dir.vendor}like-it\/cms-core\/src\/User\/Data\/Route.json"
-    },
-    "266b19a8-ff3e-4564-a151-667ba9d9b1c8": {
-        "resource": "{$project.dir.vendor}like-it\/cms-core\/src\/Navigation\/Data\/Route.json"
     }
 }
