@@ -15,32 +15,23 @@
         {priya.redirect(route.get(route.prefix() + '-index'))}
     {/if}
 {else}
-    {if(cookie('user.token2'))}
+    {if(cookie('user.token'))}
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Cookie.tpl')}
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.User.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
-        {script('ready')}
-        console.log(_('user').collection());
-        {/script}
+        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl')}
 
         /*
-        load current user
-        * load refresh token from cookie in js user
+        {script('ready')}
+
+        {/script}
         */
     {elseif(cookie('user.refresh.token'))}
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Refresh.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
-        {script('ready')}
-        console.log(_('user').collection());
-        {/script}
-        /*
-        do backend user/refresh/token to fetch user
-        */
-        {import('Start.css')}
-        {import('Debug.css', 'Debug')}
-        */
+        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl')}
     {else}
         {redirect(route.get(route.prefix() + '-user-login'))}
     {/if}
