@@ -14,7 +14,6 @@
     {import('Debug.css', 'Debug')}
     */
 {else}
-    {dd(route.prefix())}
     {redirect(route.get(route.prefix() + '-user-login'))}
 {/if}
 

@@ -1,0 +1,10 @@
+{
+    "cms-core-user-login": {
+        "path": "\/User\/Login\/",
+        "controller": "LikeIt.Cms.Core.User.Controller.User.login",
+        "method": [
+            "GET",
+            "POST"
+        ]
+    }
+}
