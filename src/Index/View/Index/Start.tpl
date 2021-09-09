@@ -4,11 +4,6 @@
         {script('module')}
         import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
         user.set({object($request.user, 'json-line')});
-        console.log(user.get());
-        {/script}
-        /*
-        {script('ready')}
-        _('user').collection('user', {object($request.user, 'json-line')});
         {/script}
         {if(!is.empty($request.user.token))}
             {require($controller.dir.view + 'User/Token/Set.Cookie.tpl')}
