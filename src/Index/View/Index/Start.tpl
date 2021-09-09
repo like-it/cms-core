@@ -19,6 +19,10 @@
         {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
+        {script('module')}
+        import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
+        console.log(user.get());
+        {/script}
         /*
         load current user
         load refresh token from cookie in js user
