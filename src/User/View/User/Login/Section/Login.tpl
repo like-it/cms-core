@@ -10,7 +10,7 @@ _('user').collection('start.title', "{__('start.title')}");
 {/script}
 {import('Start.css', 'Index')}
 {import('Debug.css', 'Debug')}
-{import('Login.js')}
+{import('Login.js', null, null, true)}
 {import('Login.css')}
 {import('Password.Forgot.css')}
 <section name="user-login">
