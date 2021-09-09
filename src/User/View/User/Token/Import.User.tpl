@@ -9,7 +9,7 @@
           data.user.refresh = {$ldelim}{$rdelim};
           data.user.refresh.token = refresh_token;
           _('user').collection('user', data.user);
-        {$rdelim} else ){$ldelim}
+        {$rdelim} else {$ldelim}
         {$rdelim}
     {$rdelim});
 {/script}
