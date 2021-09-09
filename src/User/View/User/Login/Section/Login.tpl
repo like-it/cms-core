@@ -22,7 +22,7 @@ _('user').collection('start.title', "{__('start.title')}");
 			method="POST"
 		>
 		    <input type="hidden" name="method" value="replace-with">
-		    <input type="hidden" name="target" value="section[name=\"user-login\"]">
+		    <input type="hidden" name="target" value="section[name='user-login']">
 			<label><i class="fas fa-user""></i></label>
 			<input type="text" name="node.email" value="{$request.node.email|default:''}" placeholder="{__('user.e-mail')}"/><br>
 			<label><i class="fas fa-key""></i></label>
