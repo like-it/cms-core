@@ -12,6 +12,10 @@
         {if(!is.empty($request.user.refresh.token))}
             {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Set.Refresh.Cookie.tpl')}
         {/if}
+        {redirect(route.get(route.prefix() + '-index'))}
+    {/if}
+    {if(cookie('user.token'))}
+        {dd('yes')}
     {/if}
     /*
     {if(cookie('user.token'))}
