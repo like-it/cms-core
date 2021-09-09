@@ -14,6 +14,7 @@
     {import('Debug.css', 'Debug')}
     */
 {else}
+    {dd(route.get(route.prefix() + '-user-login'))}
     {redirect(route.get(route.prefix() + '-user-login'))}
 {/if}
 
@@ -40,7 +41,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">{__('navbar.translations')}</a>
                 </li>
-                /*
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Dropdown
@@ -55,7 +55,6 @@
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
-                */
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="{__('navbar.search.type')}" placeholder="{__('navbar.search.placeholder')}" aria-label="{__('navbar.search.label')}" name="q">
