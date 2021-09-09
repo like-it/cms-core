@@ -44,7 +44,7 @@ ready(() => {
                     const code = data.exception.code;
                     switch(code){
                     case 'user-blocked' :
-                        const route_blocked = _('user').collection('route.frontend.blocked');
+                        const route_blocked = _('user').collection('route.cms.core.blocked');
                         if(route_blocked){
                             setTimeout(function(){
                                 request(route_blocked);
@@ -58,7 +58,7 @@ ready(() => {
                     error.html(data.exception.message);
                 }
             } else if(!is.empty(data.user)){
-                const route_success = _('user').collection('route.frontend.start');
+                const route_success = _('user').collection('route.cms.core.start');
                 if(route_success){
                     request(route_success, data);
                 }
