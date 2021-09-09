@@ -1,6 +1,6 @@
 {script('module')}
 import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
-import {$ldelim} user {$rdelim} from "/Module/Web/Js/User.js";
+import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
 //user.data('route.core.token', "{server.url('core')}User/");
 user.data('route.core.refresh.token', "{server.url('core')}User/Refresh/Token");
 user.data('route.core.refresh.token', "{server.url('core')}User/Refresh/Token");
