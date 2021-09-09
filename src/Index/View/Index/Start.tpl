@@ -23,7 +23,7 @@
         {script('ready')}
         const token = _('user').collection('user.token');
         header("Authorization", 'Bearer ' + token);
-        request("{server.url('core')}/Navigation/Get/");
+        request("{server.url('core')}Navigation/Get/");
         {/script}
         /*
          // bug in parse array
@@ -44,7 +44,7 @@
         {script('ready')}
         const token = _('user').collection('user.token');
         header("Authorization", 'Bearer ' + token);
-        request("{server.url('core')}/Navigation/Get/");
+        request("{server.url('core')}Navigation/Get/");
         {/script}
         /*
         // bug in parse array
