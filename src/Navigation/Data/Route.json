@@ -1,0 +1,10 @@
+{
+    "cms-core-navigation-get": {
+        "path": "\/",
+        "controller": "LikeIt.Cms.Core.Navigation.Controller.Navigation.get",
+        "method": [
+            "GET",
+            "POST"
+        ]
+    }
+}
