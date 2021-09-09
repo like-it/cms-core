@@ -21,6 +21,8 @@
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         {script('ready')}
+        const token = _('user').collection('user.token');
+        header("Authorization", 'Bearer ' + token);
         request("{server.url('core')}/Navigation/Get/");
         {/script}
         /*
@@ -40,6 +42,8 @@
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         {script('ready')}
+        const token = _('user').collection('user.token');
+        header("Authorization", 'Bearer ' + token);
         request("{server.url('core')}/Navigation/Get/");
         {/script}
         /*

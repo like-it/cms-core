@@ -4,7 +4,8 @@
         "controller": "LikeIt.Cms.Core.Navigation.Controller.Navigation.get",
         "method": [
             "GET",
-            "POST"
+            "POST",
+            "OPTIONS"
         ]
     }
 }
