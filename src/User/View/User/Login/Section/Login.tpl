@@ -1,8 +1,8 @@
+/*
 {script('module')}
 import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
 import {$ldelim} user {$rdelim} from "/Module/User/Js/User.js";
 //user.data('route.core.token', "{server.url('core')}User/");
-user.data('route.core.refresh.token', "{server.url('core')}User/Refresh/Token");
 user.data('route.core.refresh.token', "{server.url('core')}User/Refresh/Token");
 user.data('route.cms.core.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
 user.data('route.cms.core.login', "{route.get(route.prefix() + '-user-login-blocked')}");
@@ -11,16 +11,13 @@ user.data('route.cms.core.start', "{route.get(route.prefix() + '-start')}");
 console.log(user.data());
 {/script}
 {script('ready')}
-/*
-_('user').collection('route.backend.token', "{server.url('core')}Navigation/");
-_('user').collection('route.backend.refresh.token', "{server.url('core')}User/Refresh/Token/");
-_('user').collection('route.frontend.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
-_('user').collection('route.frontend.login', "{route.get(route.prefix() + '-user-login')}");
-_('user').collection('route.frontend.refresh.token', "{route.get(route.prefix() + '-user-refresh-token')}");
-_('user').collection('route.frontend.start', "{route.get(route.prefix() + '-start')}");
-_('user').collection('route.frontend.token', "{route.get(route.prefix() + '-navigation')}");
+_('user').collection('route.core.refresh.token', "{server.url('core')}User/Refresh/Token/");
+_('user').collection('route.cms.core.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
+_('user').collection('route.cms.core.login', "{route.get(route.prefix() + '-user-login')}");
+_('user').collection('route.cms.core.refresh.token', "{route.get(route.prefix() + '-user-refresh-token')}");
+_('user').collection('route.cms.core.start', "{route.get(route.prefix() + '-start')}");
+//_('user').collection('route.frontend.token', "{route.get(route.prefix() + '-navigation')}");
 _('user').collection('start.title', "{__('start.title')}");
-*/
 {/script}
 {import('Start.css', 'Index')}
 {import('Debug.css', 'Debug')}
