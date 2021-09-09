@@ -11,6 +11,12 @@
                     <a class="nav-link active" aria-current="page" href="#">{__('navbar.home')}</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#">{__('navbar.content')}</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">{__('navbar.media')}</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">{__('navbar.settings')}</a>
                 </li>
                 <li class="nav-item">
