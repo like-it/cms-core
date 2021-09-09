@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8591cbf5bc661d69b5b7ec756e16321b",
+    "content-hash": "d7130ee9b6c03f30df4d7ed777153222",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -154,16 +154,16 @@
         },
         {
             "name": "r3m/framework",
-            "version": "dev-develop",
+            "version": "0.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/like-it/r3m-framework.git",
-                "reference": "d0a8528998828a73b363e784fc44a9bf6f48093d"
+                "reference": "a74aa5fdbec9991c9ca1215812b44ff11be9f9d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/like-it/r3m-framework/zipball/d0a8528998828a73b363e784fc44a9bf6f48093d",
-                "reference": "d0a8528998828a73b363e784fc44a9bf6f48093d",
+                "url": "https://api.github.com/repos/like-it/r3m-framework/zipball/a74aa5fdbec9991c9ca1215812b44ff11be9f9d9",
+                "reference": "a74aa5fdbec9991c9ca1215812b44ff11be9f9d9",
                 "shasum": ""
             },
             "require": {
@@ -198,17 +198,15 @@
             ],
             "support": {
                 "issues": "https://github.com/like-it/r3m-framework/issues",
-                "source": "https://github.com/like-it/r3m-framework/tree/develop"
+                "source": "https://github.com/like-it/r3m-framework/tree/0.1.42"
             },
-            "time": "2021-09-05T00:02:19+00:00"
+            "time": "2021-09-09T14:37:15+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "r3m/framework": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
