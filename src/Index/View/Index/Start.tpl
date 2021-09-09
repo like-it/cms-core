@@ -20,18 +20,28 @@
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.User.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
-        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl')}
-
-        /*
-        {script('ready')}
-
-        {/script}
-        */
+        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl', [
+            "controller" => [
+                "dir" => [
+                    "data" => dir.name($controller.dir.data, 2) + 'Navigation/Data/'
+                ],
+                "view" => dir.name($controller.dir.view, 2) + 'Navigation/View',
+                "title" => "navigation"
+            ]
+        ])}
     {elseif(cookie('user.refresh.token'))}
         {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Refresh.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
-        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl')}
+        {require(dir.name($controller.dir.view, 2) + 'Navigation/View/Navigation/Get.tpl', [
+            "controller" => [
+                "dir" => [
+                    "data" => dir.name($controller.dir.data, 2) + 'Navigation/Data/'
+                ],
+                "view" => dir.name($controller.dir.view, 2) + 'Navigation/View',
+                "title" => "navigation"
+            ]
+        ])}
     {else}
         {redirect(route.get(route.prefix() + '-user-login'))}
     {/if}

@@ -15,16 +15,8 @@ class Navigation extends View {
     public static function start(App $object){
         $name = Navigation::name(__FUNCTION__, __CLASS__, '/');
         try {
-            if(App::contentType($object) === App::CONTENT_TYPE_HTML){
-                $url = Navigation::locate($object, 'Index/Main');
-                $object->data('template.name', $name);
-                $object->data('template.dir', Index::DIR);
-                $view = Navigation::response($object, $url);
-            } else {
-                $url = Navigation::locate($object, $name);
-                $view = Navigation::response($object, $url);
-            }
-            return $view;
+            $url = Navigation::locate($object, $name);
+            return Navigation::response($object, $url);
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
             return $exception;
         }
