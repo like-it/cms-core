@@ -58,7 +58,7 @@ ready(() => {
                     error.html(data.exception.message);
                 }
             } else if(!is.empty(data.user)){
-                const route_success = _('user').collection('route.cms.core.start');
+                const route_success = _('user').collection('route.cms.core.index');
                 if(route_success){
                     request(route_success, data);
                 }
