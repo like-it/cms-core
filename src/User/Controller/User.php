@@ -18,7 +18,7 @@ class User extends View {
             if(App::contentType($object) === App::CONTENT_TYPE_HTML){
                 $url = User::locate($object, '/Index/Main');
                 $object->data('template.name', $name);
-                $object->data('template.dir', Index::DIR);
+                $object->data('template.dir', User::DIR);
                 $view = User::response($object, $url);
             } else {
                 $url = User::locate($object, $name);
