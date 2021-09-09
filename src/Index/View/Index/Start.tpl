@@ -25,7 +25,7 @@
 
         /*
         load current user
-        load refresh token from cookie in js user
+        * load refresh token from cookie in js user
         */
     {elseif(cookie('user.refresh.token'))}
         /*
