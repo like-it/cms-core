@@ -22,9 +22,9 @@ _('user').collection('start.title', "{__('start.title')}");
 			method="POST"
 		>
 			<label><i class="fas fa-user""></i></label>
-			<input type="text" name="email" value="{$request.email|default:''}" placeholder="{__('user.e-mail')}"/><br>
+			<input type="text" name="node.email" value="{$request.node.email|default:''}" placeholder="{__('user.e-mail')}"/><br>
 			<label><i class="fas fa-key""></i></label>
-			<input type="password" name="password" value="{$request.password|default:''}" placeholder="{__('user.password')}"/><br>
+			<input type="password" name="node.password" value="{$request.node.password|default:''}" placeholder="{__('user.password')}"/><br>
 			<button
 			    type="submit"
 			>
