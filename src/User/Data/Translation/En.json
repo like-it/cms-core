@@ -12,6 +12,6 @@
     "user.password.forgot.text" : "Please fill in your e-mail address in order to receive a recovery e-mail:",
     "user.password.forgot.title" : "Forgot password",
     "user.password.forgot.success" : "An e-mail with instructions is send to \"{request('email')}\"",
-    "user.version" : "Version ",
+    "user.version" : "Funda CMS Version ",
     "user.send" : "Send"
 }
