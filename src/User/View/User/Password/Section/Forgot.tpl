@@ -1,5 +1,5 @@
 {script('ready')}
-//_('user').collection('route.cms.core.password_forgot', "{route.get(route.prefix() + '-user-password-forgot-success')}");
+_('user').collection('route.cms.core.password_forgot', "{route.get(route.prefix() + '-user-password-forgot-success')}");
 console.log(_('user').collection());
 {/script}
 {import(
