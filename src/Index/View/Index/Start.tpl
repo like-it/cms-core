@@ -16,8 +16,8 @@
     {/if}
 {else}
     {if(cookie('user.token2'))}
-        {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.Cookie.tpl')}
-        {require(dir.name($controller.dir.view,2) + 'User/View/User/Token/Import.User.tpl')}
+        {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.Cookie.tpl')}
+        {require(dir.name($controller.dir.view, 2) + 'User/View/User/Token/Import.User.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         {script('ready')}
@@ -29,7 +29,7 @@
         * load refresh token from cookie in js user
         */
     {elseif(cookie('user.refresh.token'))}
-        {require( $controller.dir.view + 'User/Token/Import.Refresh.Cookie.tpl')}
+        {require(dirname($controller.dir.view, 2) + 'User/View/User/Token/Import.Refresh.Cookie.tpl')}
         {import('Start.css')}
         {import('Debug.css', 'Debug')}
         {script('ready')}
