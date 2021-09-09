@@ -10,7 +10,6 @@ _('password.forgot').bind = () => {
             const data = this.data('serialize');
             this.request(data, null, (url, data) => {
                 const route_success = _('user').collection('route.cms.core.password_forgot');
-                console.log(route_success);
                 if(
                   route_success &&
                   !is.empty(data.isSend)
