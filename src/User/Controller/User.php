@@ -2,6 +2,7 @@
 namespace LikeIt\Cms\Core\User\Controller;
 
 use R3m\Io\App;
+use R3m\Io\Module\Response;
 use R3m\Io\Module\View;
 
 use Exception;
@@ -20,12 +21,14 @@ class User extends View {
                 $object->data('template.name', $name);
                 $object->data('template.dir', User::DIR);
                 $view = User::response($object, $url);
+                return $view;
             } else {
                 $url = User::locate($object, $name);
                 $view = User::response($object, $url);
-                dd($view);
+
+                return new Response($view, Response::TYPE_JSON);
             }
-            return $view;
+
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
             return $exception;
         }
