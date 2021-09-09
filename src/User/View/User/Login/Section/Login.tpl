@@ -1,6 +1,9 @@
+{script('module')}
+import {$ldelim} root {$rdelim} from "/Module/Web/Js/Web.js";
+{/script}
 {script('ready')}
-_('user').collection('route.backend.token', "{server.url('backend')}Navigation/");
-_('user').collection('route.backend.refresh.token', "{server.url('backend')}User/Refresh/Token/");
+_('user').collection('route.backend.token', "{server.url('core')}Navigation/");
+_('user').collection('route.backend.refresh.token', "{server.url('core')}User/Refresh/Token/");
 _('user').collection('route.frontend.blocked', "{route.get(route.prefix() + '-user-login-blocked')}");
 _('user').collection('route.frontend.login', "{route.get(route.prefix() + '-user-login')}");
 _('user').collection('route.frontend.refresh.token', "{route.get(route.prefix() + '-user-refresh-token')}");
@@ -10,7 +13,7 @@ _('user').collection('start.title', "{__('start.title')}");
 {/script}
 {import('Start.css', 'Index')}
 {import('Debug.css', 'Debug')}
-{import('Login.js', null, null, true)}
+{import('Login.js')}
 {import('Login.css')}
 {import('Password.Forgot.css')}
 <section name="user-login">
@@ -18,7 +21,7 @@ _('user').collection('start.title', "{__('start.title')}");
 	<div class="user-login">
 		<form
 			name="user_login"
-			data-url="{server.url('backend')}User/Login/"
+			data-url="{server.url('core')}User/Login/"
 			method="POST"
 		>
 		    <input type="hidden" name="method" value="replace-with">
