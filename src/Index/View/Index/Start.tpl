@@ -22,8 +22,12 @@
         {import('Debug.css', 'Debug')}
         {script('ready')}
         const token = _('user').collection('user.token');
+        const data = {$ldelim}
+        method : "append",
+        target : "body"
+        {$rdelim};
         header("Authorization", 'Bearer ' + token);
-        request("{server.url('core')}Navigation/Get/");
+        request("{server.url('core')}Navigation/Get/", data);
         {/script}
         /*
          // bug in parse array
@@ -43,6 +47,10 @@
         {import('Debug.css', 'Debug')}
         {script('ready')}
         const token = _('user').collection('user.token');
+        const data = {$ldelim}
+        method : "append",
+        target : "body"
+        {$rdelim};
         header("Authorization", 'Bearer ' + token);
         request("{server.url('core')}Navigation/Get/");
         {/script}
