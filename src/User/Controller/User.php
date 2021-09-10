@@ -66,6 +66,7 @@ class User extends View {
 
     public static function logout(App $object){
         $name = User::name(__FUNCTION__, __CLASS__, '/');
+        dd($name);
         try {
             $url = User::locate($object, $name);
             return User::response($object, $url);
