@@ -7,6 +7,13 @@
             "POST"
         ]
     },
+    "cms-core-user-logout": {
+        "path": "\/User\/Logout\/",
+        "controller": "LikeIt.Cms.Core.User.Controller.User.logout",
+        "method": [
+            "GET"
+        ]
+    },
     "cms-core-user-login-blocked": {
         "path": "\/User\/Login\/Blocked",
         "controller": "LikeIt.Cms.Core.User.Controller.User.login_blocked",
