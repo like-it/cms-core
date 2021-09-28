@@ -31,7 +31,7 @@
         header("Authorization", 'Bearer ' + token);
         request("{server.url('core')}Navigation/Get/", data);
         header("Authorization", 'Bearer ' + token);
-        request("{server.url('core')}Home/Body/", data);
+        request("{server.url('core')}Home/Main/", data);
         {/script}
         /*
          // bug in parse array
