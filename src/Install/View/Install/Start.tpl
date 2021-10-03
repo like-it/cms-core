@@ -25,6 +25,20 @@
         <label for="password">Password</label>
         <input id="password" name="node.password" />
     </fieldset>
+    <fieldset>
+        <legend>Cms location:</legend>
+        <label for="cms-subdomain">Cms host: </label>
+        <input id="cms-subdomain" name="node.cms.subdomain" disabled value="cms" />
+        <input name="node.cms.domain" />
+        <input name="node.cms.extension" />
+    </fieldset>
+    <fieldset>
+        <legend>Core location:</legend>
+        <label for="core-subdomain">Core host: </label>
+        <input id="core-subdomain" name="node.core.subdomain" disabled value="core" />
+        <input name="node.core.domain" />
+        <input name="node.core.extension" />
+    </fieldset>
 </form>
 </body>
 </html>
