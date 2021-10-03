@@ -1,7 +1,9 @@
 {
     "cms-core-install": {
         "path": "\/",
-        "host": "localhost",
+        "host": [
+            "localhost"
+        ],
         "controller": "LikeIt.Cms.Core.Install.Controller.Install.start",
         "method": [
             "GET",
