@@ -15,7 +15,17 @@
     <link rel="shortcut icon" href="{$html.head.icon|default:''}">
 </head>
 <body>
-Install cms... hard
+<form method="post" action="/Process">
+    <h1>Funda CMS</h1>
+    <h3>Installation:</h3>
+    <fieldset>
+        <legend>Admin User:</legend>
+        <label for="email">E-mail</label>
+        <input id="email" name="node.email" />
+        <label for="password">Password</label>
+        <input id="password" name="node.password" />
+    </fieldset>
+</form>
 </body>
 </html>
 
