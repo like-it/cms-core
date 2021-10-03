@@ -2,6 +2,9 @@
     "ce3934d9-c84d-4699-8f0e-ce8a73ab9dd7": {
         "resource": "{$project.dir.vendor}like-it\/cms-core\/src\/Index\/Data\/Route.json"
     },
+    "5cd7c25f-ebd2-4132-8d7e-31b534007f69": {
+        "resource": "{$project.dir.vendor}like-it\/cms-core\/src\/Install\/Data\/Route.json"
+    },
     "0f62494d-0ee6-4ca6-b227-3ad92193b6d3": {
         "resource": "{$project.dir.vendor}like-it\/cms-core\/src\/User\/Data\/Route.json"
     }
