@@ -3,7 +3,6 @@
         "path": "\/",
         "host": [
             "localhost",
-            "localhost:2606"
         ],
         "controller": "LikeIt.Cms.Core.Install.Controller.Install.start",
         "method": [

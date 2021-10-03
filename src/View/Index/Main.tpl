@@ -1,4 +1,6 @@
-{$read = parse.read(config('host.dir.data') + 'Main.json')}<!DOCTYPE html>
+{if(host.domain())}
+{$read = parse.read(config('host.dir.data') + 'Main.json')}
+{/if}<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="author" content="{$html.head.author|default:''}">
