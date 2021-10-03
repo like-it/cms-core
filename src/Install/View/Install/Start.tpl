@@ -21,23 +21,23 @@
     <fieldset>
         <legend>Admin User:</legend>
         <label for="email">E-mail</label>
-        <input id="email" name="node.email" />
+        <input id="email" name="node.email" placeholder="E-mail" />
         <label for="password">Password</label>
-        <input id="password" name="node.password" />
+        <input id="password" name="node.password" placeholder="Password"/>
     </fieldset>
     <fieldset>
         <legend>Cms location:</legend>
         <label for="cms-subdomain">Cms host: </label>
         <input id="cms-subdomain" name="node.cms.subdomain" disabled value="cms" />
-        <input name="node.cms.domain" />
-        <input name="node.cms.extension" />
+        <input name="node.cms.domain" placeholder="domain name"/>
+        <input name="node.cms.extension" placeholder="domain extension"/>
     </fieldset>
     <fieldset>
         <legend>Core location:</legend>
         <label for="core-subdomain">Core host: </label>
         <input id="core-subdomain" name="node.core.subdomain" disabled value="core" />
-        <input name="node.core.domain" />
-        <input name="node.core.extension" />
+        <input name="node.core.domain" placeholder="domain name"/>
+        <input name="node.core.extension" placeholder="domain extension" />
     </fieldset>
 </form>
 </body>
