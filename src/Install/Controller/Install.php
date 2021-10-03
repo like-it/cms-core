@@ -15,15 +15,8 @@ class Install extends View {
     public static function start(App $object){
         $name = Install::name(__FUNCTION__, __CLASS__, '/');
         try {
-            if(App::contentType($object) === App::CONTENT_TYPE_HTML){
-                $url = Install::locate($object, 'Index/Main');
-                $object->data('template.name', $name);
-                $object->data('template.dir', Install::DIR);
-                $view = Install::response($object, $url);
-            } else {
-                $url = Install::locate($object, $name);
-                $view = Install::response($object, $url);
-            }
+            $url = Install::locate($object, $name);
+            $view = Install::response($object, $url);
             return $view;
         } catch (Exception | LocateException | UrlEmptyException | UrlNotExistException $exception){
             return $exception;
